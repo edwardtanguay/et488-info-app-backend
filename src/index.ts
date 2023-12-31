@@ -1,10 +1,7 @@
 import express from 'express';
+import * as config from './config';
 
 const app = express();
-
-const getPort = (): number => {
-	return 4888;
-}
 
 app.get('/', (req, res) => {
 	res.json({
@@ -12,6 +9,6 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.listen(getPort(), () => {
-	console.log(`listening at http://localhost:${getPort()}`);
+app.listen(config.getPort(), () => {
+	console.log(`listening at http://localhost:${config.getPort()}`);
 });
