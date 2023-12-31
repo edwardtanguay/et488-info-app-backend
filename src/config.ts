@@ -3,6 +3,6 @@ export const getPort = (): number => {
 }
 
 export const getAppName = (): string => {
-	return 'Info App - Backend'
+	return 'Info App et488 - Backend'
 }
 
