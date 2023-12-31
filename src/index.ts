@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
 	res.json({
-		appName: "et488-info-app-backend"
+		appName: config.getAppName()
 	});
 });
 
